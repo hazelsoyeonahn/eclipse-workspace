@@ -1,0 +1,24 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public class Hishad {
+	 public static boolean solution(int x) {
+	        boolean answer = true;
+	        
+	        List<Integer> digits = new LinkedList<Integer>();
+
+	        while (x>0) {
+	            digits.add(0, x%10);
+	            x=x/10;
+	        }
+	        
+	        return answer;
+	    }
+	 
+	 public static void main(String arg[]) {
+		 int n = 10;
+		 
+		 System.out.println(solution(n));
+		 
+	 }
+}

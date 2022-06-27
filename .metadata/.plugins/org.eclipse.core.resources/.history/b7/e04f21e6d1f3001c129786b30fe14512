@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Hashtable;
+
+
+public class Solution {
+
+    public static String solution(String[] participant, String[] completion) {
+        String answer = "";
+        Hashtable<String, Integer> ht1 = new Hashtable<>();
+        
+        for(int i=0; i<participant.length; i++){
+            System.out.println(participant[i]);
+            ht1.put(participant[i], 0);
+        }
+      
+        System.out.println(ht1);
+        
+     
+        
+
+        return answer;
+    }
+	
+   public static void main(String args[]) {
+	   String[] arr = new String[3];
+	   arr[0] = "leo";
+	   arr[1] = "kiki";
+	   arr[2] = "eden";
+	 
+	   String[] ar2 = new String[2];
+	   ar2[0] = "eden";
+	   ar2[1] = "kiki";
+	   
+	   String result = solution(arr,ar2);
+	   System.out.println(result);
+    }
+    
+}
+
+

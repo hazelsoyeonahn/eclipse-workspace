@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class onetwofour {
+    public static String solution(int n) {
+        String answer = "";
+        boolean find = false;
+        int number = 0;
+        int count = 0;
+        
+        
+        
+        
+        return answer;
+    }
+    
+   public static void make124(int n) {
+	  int divide = n/3;
+	  int mod = n%3;
+	  boolean loop = true;
+	  int mult = 1;
+	  
+	  System.out.println("divide: "+divide);
+	  System.out.println("mod: "+mod);
+	  
+	  
+	  while(loop) {
+		  if(n > 3*mult) {
+			  mult++;
+		  }else {
+			  loop = false;
+		  }
+	  }
+	  
+	  if(mod == 0) {
+		  divide--;
+		  mod = 4;
+	  }
+	  System.out.println("mult: "+mult);
+	  int num = 0;
+	  num= (10*(divide))+mod; 
+	  System.out.println(num);
+   }
+    
+    
+    public static void main(String args[]) {
+    	int n = 5;
+    	System.out.println(">");
+    	make124(9);
+    }
+}

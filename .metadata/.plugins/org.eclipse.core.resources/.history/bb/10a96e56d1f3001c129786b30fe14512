@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Hashtable;
+
+
+public class Solution {
+
+    public static String solution(String[] participant, String[] completion) {
+        String answer = "";
+        Hashtable<String, Integer> ht1 = new Hashtable<>();
+        
+        for(int i=0; i<participant.length; i++){
+            ht1.put(participant[i], 0);
+            System.out.println(participant[i]);
+        }
+      
+        System.out.println(ht1);
+        
+     
+        
+
+        
+        System.out.println(ht2);
+    
+        return answer;
+    }
+	
+   public static void main(String args[]) {
+	   String[] arr = new String[4];
+	   arr[0] = "leo";
+	   arr[1] = "kiki";
+	   arr[2] = "eden";
+	   arr[3] = "wtf";
+	 
+	   String[] ar2 = new String[2];
+	   arr[0] = "eden";
+	   arr[1] = "kiki";
+	   
+	   String result = solution(arr,ar2);
+	   System.out.println(result);
+    }
+    
+}
+
+

@@ -1,0 +1,17 @@
+
+public class sequence {
+    public static int solution(String s) {
+        int answer = 0;
+        
+        
+        return answer;
+    }
+    
+    
+    
+    public static void main(String args[]) {
+    	String str = "aabbaccc";
+    	
+    	System.out.println(solution(str));
+    }
+}

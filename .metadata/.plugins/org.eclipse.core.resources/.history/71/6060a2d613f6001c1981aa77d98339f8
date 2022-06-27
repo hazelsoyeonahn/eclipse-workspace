@@ -1,0 +1,44 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public class Hishad {
+	 public static boolean solution(int x) {
+	        boolean answer = false;
+	        int n = x;
+	        
+	        List<Integer> digits = new LinkedList<Integer>();
+
+	        while (x>0) {
+	            digits.add(0, x%10);
+	            x=x/10;
+	        }
+	        
+	        int total = 0;
+	        
+	        for(Integer d: digits) {
+	        	total += d;
+	        }
+	 
+	        System.out.println(n%total);
+	        if(n%total == 0)
+	        	answer = true;
+	        return answer;
+	    }
+	 
+	 public int sol(int left, int right) {
+	        int answer = 0;
+	        for(int i = 1; i <= left; i++)
+	        {
+	            if(left % i == 0)
+	                System.out.println(i + " "); 
+	        }
+	        return answer;
+	    }
+	 
+	 public static void main(String arg[]) {
+		 int n = 11;
+		 
+		 System.out.println(solution(n));
+		 System.out.println(11%2);
+	 }
+}

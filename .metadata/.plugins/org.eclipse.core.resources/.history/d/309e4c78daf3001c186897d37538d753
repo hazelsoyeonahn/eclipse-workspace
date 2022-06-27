@@ -1,0 +1,64 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Progress {
+
+	   public static int[] solution(int[] progresses, int[] speeds) {
+	        int[] answer = {};
+	        Queue<Integer> q = new LinkedList<>();
+	        boolean loop = true;
+	        int max = 100;
+	        
+	        for(int p : progresses) {
+	        	q.add(p);
+	        }
+	        
+	        while(loop) {
+	        	int n = 0;
+	        	for(Integer i : q) {
+	        		i = i+speeds[n];
+	        		n++;
+	        	}
+	        	System.out.println(q);
+	        	loop = false;
+	        }
+	        
+	        
+	        
+	        return answer;
+	    }
+	
+	
+	public static void main(String args[]) {
+		
+		int[] ar11 = new int[3];
+		ar11[0] = 93;
+		ar11[1] = 30;
+		ar11[2] = 55;
+		
+		int[] ar12 = new int[3];
+		ar12[0] = 1;
+		ar12[1] = 30;
+		ar12[2] = 5;
+		
+		
+		 	int[] ar21 = new int[6];
+		   ar21[0] = 95;
+		   ar21[1] = 90;
+		   ar21[2] = 99;
+		   ar21[3] = 99;
+		   ar21[4] = 80;
+		   ar21[5] = 99;
+		 
+		   int[] ar22 = new int[6];
+		   ar22[0] = 1;
+		   ar22[1] = 1;
+		   ar22[2] = 1;
+		   ar22[3] = 1;
+		   ar22[4] = 1;
+		   ar22[5] = 1;
+		   
+		  int[] result = solution(ar11,ar12);
+		   System.out.println("\n"+result);
+	    }
+}

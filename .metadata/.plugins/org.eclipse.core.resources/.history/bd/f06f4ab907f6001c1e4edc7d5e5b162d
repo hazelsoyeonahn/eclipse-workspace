@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class onetwofour {
+    public static String solution(int n) {
+        String answer = "";
+        boolean find = false;
+        int divide = n/3;
+        int mod = n%3;
+        int count = 0;
+        int index = 0;
+        
+        String[] arr = new String[3];
+        arr[0] = "1";
+        arr[1] = "2";
+        arr[2] = "4";
+        
+        while(count != n) {
+        	answer = arr[count];
+        	count++;
+        }
+        
+        
+        return answer;
+    }
+    
+  
+    public static void main(String args[]) {
+    	int n = 5;
+    	System.out.println(">");
+    	System.out.println(solution(3));
+    }
+}
